@@ -1,0 +1,43 @@
+{
+  "name": "retrotv-api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/main.js",
+    "start:dev": "ts-node-dev --respawn --transpile-only src/main.ts",
+    "start:prod": "node dist/main.js",
+    "seed:categories": "ts-node-dev --transpile-only src/seeds/categories.seed.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.991.0",
+    "@aws-sdk/s3-request-presigner": "^3.991.0",
+    "@nestjs/axios": "^4.0.1",
+    "@nestjs/common": "^10.2.0",
+    "@nestjs/config": "^3.0.0",
+    "@nestjs/core": "^10.2.0",
+    "@nestjs/jwt": "^10.0.0",
+    "@nestjs/passport": "^10.0.0",
+    "@nestjs/platform-express": "^10.2.0",
+    "@nestjs/swagger": "^6.0.0",
+    "@nestjs/typeorm": "^10.0.0",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/passport-jwt": "^3.0.8",
+    "axios": "^1.13.5",
+    "bcryptjs": "^2.4.3",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0",
+    "pg": "^8.10.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0",
+    "typeorm": "^0.3.18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  }
+}

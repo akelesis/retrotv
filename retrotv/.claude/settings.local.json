@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ren:*)",
+      "Bash(move tailwind.config.cjs tailwind.config.js)",
+      "Bash(move:*)",
+      "Bash(npm install:*)"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+.program-card {
+    background: white;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 15px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    padding: 16px;
+    width: 100%;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #777;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card-description {
+    font-size: 14px;
+    font-weight: 350;
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+  }

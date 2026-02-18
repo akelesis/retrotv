@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc:*)",
+      "Bash(npm install:*)",
+      "Bash(powershell -Command \"New-NetFirewallRule -DisplayName ''RetroTV Frontend \\(5173\\)'' -Direction Inbound -LocalPort 5173 -Protocol TCP -Action Allow\")"
+    ]
+  }
+}

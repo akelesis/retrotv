@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* keep legacy small global tweaks (scanline and borders are inlined in components) */
+.crt-overlay {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  background-size: 100% 4px, 3px 100%;
+  pointer-events: none;
+}
+.retro-border-outset {
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #404040;
+}
+.retro-border-inset {
+  border-top: 2px solid #404040;
+  border-left: 2px solid #404040;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+.retro-title-bar {
+  background: linear-gradient(90deg, #135bec 0%, #000080 100%);
+}
+
+/* Player screen utilities */
+.crt-curve {
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
+.osd-text {
+  text-shadow: 2px 2px #000;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+}
+.vcr-blue {
+  background-color: rgba(19, 91, 236, 0.85);
+}
+
+/* Guide screen utilities */
+.crt-scanlines {
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  background-size: 100% 3px, 3px 100%;
+  pointer-events: none;
+}
+.pixel-border {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #000000;
+}
+.focus-glow {
+  box-shadow: 0 0 15px #f9e406;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Win95 channel manager utilities */
+.win95-border {
+  box-shadow: inset 1px 1px #ffffff, inset -1px -1px #808080, 1px 1px #000000;
+}
+.win95-button {
+  box-shadow: inset 1.5px 1.5px #ffffff, inset -1.5px -1.5px #404040, 1px 1px #000000;
+  background-color: #c0c0c0;
+}
+.win95-button:active,
+.win95-button.active {
+  box-shadow: inset 1.5px 1.5px #000000, inset -1.5px -1.5px #ffffff;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+.win95-inset {
+  box-shadow: inset 1.5px 1.5px #808080, inset -1.5px -1.5px #ffffff;
+  background-color: #ffffff;
+}
+.win95-tab {
+  box-shadow: inset 1px 1px #ffffff, -1px 0 #c0c0c0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border: 1px solid #000;
+  border-bottom: none;
+  position: relative;
+  bottom: -1px;
+  z-index: 10;
+}
+.win95-tab.active {
+  background-color: #c0c0c0;
+  padding-bottom: 2px;
+  margin-top: -2px;
+  z-index: 20;
+}
